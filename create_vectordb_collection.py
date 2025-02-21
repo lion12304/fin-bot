@@ -27,3 +27,5 @@ if not client.collection_exists(collection_name):
         collection_name=collection_name,
         vectors_config=VectorParams(size=vector_size, distance=Distance.COSINE)
     )
+    
+print(f"Collection '{collection_name}' created successfully with vector size {vector_size}.")
