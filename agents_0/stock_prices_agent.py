@@ -1,4 +1,4 @@
-from agent import *
+from agents.agent import *
 import yfinance as yf
 import pandas as pd
 import mplfinance as mpf
@@ -48,6 +48,7 @@ def return_image_content(stock_ticker):
 class StockPricesAgent(Agent):
     def __init__(self):
         super().__init__()
+        self.system = "You are finBot, an AI-driven finance agent. Your task is to predict a company's stock performance for the next quarter based on a candlestick chart of the stock's prices over the past year."
         self.DAY_AFTER_HOUR = 16
 
     def return_dates_range(self, stock_ticker):
@@ -116,11 +117,7 @@ class StockPricesAgent(Agent):
 
         image_message = HumanMessage(
             content=[
-                {"type": "text",
-                 "text": f"Based on the following candlestick chart of the stock's prices, What do you think {stock_name} ({stock_ticker}) "
-                         f"stock performance will be in the next quarter? First, state whether the stock is likely to go up or down in the "
-                         f"next quarter. Then, provide a brief explanation supporting your prediction."
-                },
+                {"type": "text", "text": f"Based on the following candlestick chart of the stock's prices, do you think {stock_name} ({stock_ticker}) will make profit on the next quarter? explain why."},
                 {
                     "type": "image_url",
                     "image_url": {"url": f"data:image/jpeg;base64,{image_content}"},

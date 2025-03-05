@@ -1,49 +1,48 @@
-from agents.agent import *
+from copmany_numbers_agent import CompanyNumbersAgent
+from literal_quarterly_report_agent import LiteralQuarterlyReportAgent
+from news_agent import NewsAgent
+from stock_prices_agent import StockPricesAgent
+from agent import Agent
 import json
 
 class MasterAgent(Agent):
     def __init__(self):
         super().__init__()
-        self.system = """
-            You are finBot, an AI-driven finance agent. Your role is to predict a stock's future performence in the following quarter by aggregating the predictions of a few different agents.
 
-            ### **Input Sources:**  
-            1. **numerical quarterly report agent results** - prediction of the agent and a confidence score between 1 and 10.  
-            2. **literal quarterly report agent results** - prediction of the agent and a confidence score between 1 and 10.  
-            3. **stock price agent results** - prediction of the agent and a confidence score between 1 and 10.  
+    def generate_response(self, stock_name: str, stock_ticker: str) -> bool:
+        print('Generating Response according to News:')
+        news_agent = NewsAgent()
+        news_summary = news_agent.generate_response_rag(stock_name, stock_ticker)
 
-            ### **Responsibilities:**  
-            1. **aggregate the results for a final verdict** - "stock price up" or "stock price down".
-              
+        print('Generating Response according to Q10 filing:')
+        literal_quarterly_report_agent = LiteralQuarterlyReportAgent()
+        q10_summary = literal_quarterly_report_agent.generate_response_rag(stock_name, stock_ticker)
 
-            ### **Output Format:**  
-            Your output should be structured in **JSON format** as follows:
-            ```json
-            {
-                "prediction": "stock price up" or "stock price down"
-            }
-            ```
-            Your output should be as precise as possible.
-        """
-    
-    # TODO: maybe add all of the agents as variables to the class and call their generate_response methods to get their predictions
+        print('Generating Response according to Stock Prices:')
+        stock_prices_agent = StockPricesAgent()
+        graph_summary = stock_prices_agent.generate_response(stock_name, stock_ticker)
 
-    def generate_response(self, pred1: str, conf1: int, pred2: str, conf2: int, pred3: str, conf3: int):
+        print('Generating Response according to Company Numbers:')
+        company_numbers_agent = CompanyNumbersAgent()
+        financial_summary = company_numbers_agent.generate_response(stock_name, stock_ticker)
 
-        formatted_prompt = f"""
-            **numerical quarterly report agent results:**
-            {pred1} with confidence {conf1}
-            ---
-            **literal quarterly report agent results:**
-            {pred2} with confidence {conf2}
-            ---
-            **stock price agent results:**
-            {pred3} with confidence {conf3}
-        """
+        formatted_prompt = f"Based on the following summaries of predictions from four models, predict whether the stock of {stock_name} ({stock_ticker}) is likely to go up or down in the next quarter.\n\n"
+
+        formatted_prompt += "1. **News about the stock:**\n"
+        formatted_prompt += f"{news_summary}\n\n"
+
+        formatted_prompt += "2. **Stock price graph analysis:**\n"
+        formatted_prompt += f"{graph_summary}\n\n"
+
+        formatted_prompt += "3. **Q10 filing analysis:**\n"
+        formatted_prompt += f"{q10_summary}\n\n"
+
+        formatted_prompt += "4. **Financial numbers (e.g., EPS, revenue, etc.):**\n"
+        formatted_prompt += f"{financial_summary}\n\n"
+
+        formatted_prompt += "Based on these explanations, please predict the stock's movement in the next quarter with a simple 'up' or 'down' as your answer."
+
         response = super().generate_response(formatted_prompt)
 
-        # extract feedback and decision from the response using json (TODO: check this)
-        result_data = json.loads(response)
-        prediction = result_data["prediction"]
-        return prediction
+        return True if 'up' in response.lower() else False
 

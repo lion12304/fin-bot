@@ -1,9 +1,9 @@
-from agent import *
+from agents.agent import *
 import yfinance as yf
 import pandas as pd
-from tabulate import tabulate
 
-def format_EPS_table_company_numbers(numbers_df):
+
+def format_table_company_numbers(numbers_df):
     header = "Date       | EPS Estimate | Reported EPS | Surprise (%)"
     separator = "-" * len(header)
     rows = [f"{index.strftime('%Y-%m-%d')} | {row['EPS Estimate']:.2f}        | {row['Reported EPS']:.2f}         | {row['Surprise(%)']:.2f}"
@@ -12,22 +12,11 @@ def format_EPS_table_company_numbers(numbers_df):
     table = "\n".join([header, separator] + rows)
     return table
 
-def format_table_company_numbers(stock_ticker):
-    stock = yf.Ticker(stock_ticker)
-    quarterly_income_stmt = stock.quarterly_income_stmt.iloc[:, :5].T
-
-    # Replace NaN with a nicer value (e.g., "N/A")
-    df = quarterly_income_stmt.fillna("N/A")
-
-    # Create a pipe-separated table string using tabulate
-    table_str = tabulate(df, headers='keys', tablefmt='pipe')
-    return table_str
-
-
 
 class CompanyNumbersAgent(Agent):
     def __init__(self):
         super().__init__()
+        self.system = "You are finBot, an AI-driven finance agent. Your task is to predict a company's stock performance for the next quarter based on statistics from its last five quarterly earnings reports."
         self.DAY_AFTER_HOUR = 16
 
     def return_dates_range(self, stock_ticker):
@@ -81,16 +70,13 @@ class CompanyNumbersAgent(Agent):
         will make profit on the next quarter, based on the numerical values of the company's earning reports
         """
         _, _, company_numbers_df = self.return_dates_range(stock_ticker)
-        table = format_EPS_table_company_numbers(company_numbers_df)
+        table = format_table_company_numbers(company_numbers_df)
 
-        formatted_prompt = (f"The following table contains numerical statistics on the last five quarterly earnings reports of {stock_name} "
-                            f"({stock_ticker}). It includes the earnings per share (EPS) estimate, the reported EPS, and the earnings surprise "
-                            f"percentage for each quarter.\n**Company Earnings Data:**\n\n{table}\n\nAdditionally, here is a table which compares "
-                            f"the financial performance of the company according to the last five earning reports (including the last):\n"
-                            f"**Company Earnings Data:**\n\n{format_table_company_numbers(stock_ticker)}\n\nBased on this information, "
-                            f"what do you think {stock_name} ({stock_ticker}) stock performance will be in the next quarter? First, "
-                            f"state whether the stock is likely to go up or down in the next quarter. Then, provide a brief explanation "
-                            f"supporting your prediction.")
+        formatted_prompt = f"The following table contains numerical statistics on the last five quarterly earnings reports of {stock_name} ({stock_ticker}). "
+        formatted_prompt += "It includes the earnings per share (EPS) estimate, the reported EPS, and the earnings surprise percentage for each quarter.\n"
+        formatted_prompt += "**Company Earnings Data:**\n\n"
+        formatted_prompt += f"{table}\n\n"
+        formatted_prompt += f"Based on this information, do you think {stock_name} ({stock_ticker}) will make profit on the next quarter? explain why."
 
         response = super().generate_response(formatted_prompt)
         return response
