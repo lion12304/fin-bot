@@ -4,10 +4,32 @@ from news_agent import NewsAgent
 from stock_prices_agent import StockPricesAgent
 from agent import Agent
 import json
+from Levenshtein import distance as lev_distance
 
 class MasterAgent(Agent):
     def __init__(self):
         super().__init__()
+        self.our_stocks = [('Netflix', 'NFLX'), ('Apple', 'AAPL'), ('Google', 'GOOGL'), ('Amazon', 'AMZN'), ('NVIDIA', 'NVDA'), ('AMD', 'AMD'), ('Meta', 'META')]
+        
+    def choose_stock_and_return_result(self):
+        print('Hi, I am finBot, an AI-driven finance agent. I can help you predict whether a stock is likely to go up or down in the next quarter.\n Please provide me with the name or the ticker symbol of the stock you would like me to analyze.')
+        while True:
+            user_input = input().lower()
+            stock_name, stock_ticker = None, None
+            best_distance = float('inf')
+            for stock_name, stock_ticker in self.our_stocks:
+                stock_name_lower = stock_name.lower()
+                stock_ticker_lower = stock_ticker.lower()
+                distance = min(lev_distance(user_input, stock_name_lower), lev_distance(user_input, stock_ticker_lower))
+                if distance < best_distance:
+                    best_distance = distance
+                    stock_name, stock_ticker = stock_name, stock_ticker
+            if distance != 0:
+                print('Sorry, we don\'t have information on this stock yet. Did you mean to ask about', stock_name, '(', stock_ticker, ')? \n Please provide me with the name or the ticker symbol of the stock you would like me to analyze.')
+            else:
+                result = self.generate_response(stock_name, stock_ticker)
+                print(f"Based on the information provided, the stock of {stock_name} ({stock_ticker}) is likely to go {'up' if result else 'down'} in the next quarter.")
+                break
 
     def generate_response(self, stock_name: str, stock_ticker: str) -> bool:
         print('Generating Response according to News:')
