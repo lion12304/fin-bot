@@ -1,22 +1,26 @@
 ## 2nd example for a run
 
 **Master Agent:**
+
 Hi, I am finBot, an AI-driven finance agent. I can help you predict whether a stock is likely to go up or down in the next quarter.
 *Please provide me with the name or the ticker symbol of the stock you would like me to analyze.*
 
 ---
 
 **User:**
+
 `apple`
 
 ---
 
 **Master Agent:**
+
 Generating Response according to News...
 
 ---
 
 **News Agent:** 
+
 Request for "News Agent":
 Based on the following three news documents:
 
