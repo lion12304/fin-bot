@@ -22,6 +22,7 @@ Generating Response according to Apple (APPL) News:
 **News Agent:** 
 
 Request for "News Agent":
+
 Based on the following three news documents:
 
 **1.** Warren Buffett Is Still Holding His Apple Stock: Should You?
