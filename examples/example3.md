@@ -42,6 +42,7 @@ As such, Ackman sees management's guidance for 30% to 40% annual earnings before
 With such strong growth ahead of it, Uber's forward P/E ratio of around 31 as of this writing looks like a great value.
 2. Alphabet (13.8%)
 Ackman scooped up a sizable position in Alphabet (NASDAQ: GOOG) (NASDAQ: GOOGL) in early 2023 amid fears that generative artificial intelligence (AI) start-ups would disrupt its Search product. The stock climbed 40% by the time Ackman wrote his midyear update to Pershing Square shareholders in June. Even then, he said the stock still looked attractive. And the price has moved another 48% higher since. Pershing Square's stake in Alphabet is now worth about $2 billion.
+
 **By:** Adam Levy, The Motley Fool, Sun, Mar, Min Read
 **Sentiment:** Neutral (Confidence: 0.999998927116394)
 
@@ -56,6 +57,7 @@ Quantum computing isn't as precise as traditional computing based on how it tran
 The company that completely solves this problem first will take a huge lead in the quantum computing race, and companies are getting closer and closer each day.
 Google's Willow chip made huge progress toward this goal by arranging the qubits in a grid-like system, making it more accurate as the chip scales in size. Microsoft created a new state of matter to better control the particles and give more accurate answers with its Majorana 1 chip.
 However, both of these companies are using their own funding to develop these quantum chips and are working on perfecting them before launching them. While this works with the big tech companies that have massive cash flows to fund these developments, it doesn't work for some of the smaller players.
+
 **By:** Keithen Drury, The Motley Fool, Sat, Mar, Min Read
 **Sentiment**: Positive (Confidence: 0.9997257590293884)
 
@@ -64,6 +66,7 @@ However, both of these companies are using their own funding to develop these qu
 AI Stocks: Tech Giants, Cloud Titans Face 'Show Me' Moment. Meta To Host AI Conference.
 3/03/2025 The good, bad and ugly for AI stocks: Meta and Snowflake shares have both gained 12% in 2025. Google stock...
 3/03/2025 The good, bad and ugly for AI stocks: Meta and...
+
 **By:** Jed Graham, Investor'S Business Daily
 **Sentiment**: Neutral (Confidence of 0.9999821186065674)
 
@@ -71,6 +74,7 @@ AI Stocks: Tech Giants, Cloud Titans Face 'Show Me' Moment. Meta To Host AI Conf
 AI Stocks: Tech Giants, Cloud Titans Face 'Show Me' Moment. Meta To Host AI Conference.
 3/03/2025 The good, bad and ugly for AI stocks: Meta and Snowflake shares have both gained 12% in 2025. Google stock...
 3/03/2025 The good, bad and ugly for AI stocks: Meta and...
+
 **By:** Jed Graham, Investor'S Business Daily
 **Sentiment**: Neutral (Confidence: 0.9999821186065674)
 
@@ -85,6 +89,7 @@ At 26 times forward earnings (Meta) and 19.5 times forward earnings (Alphabet), 
 AI hardware: Taiwan Semiconductor and ASML
 None of these AI innovations would be possible without chip manufacturers and suppliers' equipment, which is why Taiwan Semiconductor (NYSE: TSM) and ASML (NASDAQ: ASML) made this list.
 Taiwan Semiconductor is the world's largest contract chip manufacturer, making chips for many of the world's most advanced tech companies. It's seeing a massive boom on its AI chip side, with management expecting around a 45% compounded annual growth rate (CAGR) over the next five years for its AI-related chips. That's a massive growth rate, and it shows the high demand for hardware to power all the AI innovations.
+
 **By:** Keithen Drury, The Motley Fool, Sat, Mar, Min Read
 **Sentiment**: Neutral (Confidence: 0.9849352836608887)
 
