@@ -18,6 +18,11 @@ pip install -r requirements.txt
 ```
 ## running the code
 
+```
+cd agents/
+python RunAgent.py
+```
+
 ## Example for a Run
 
 **Master Agent:**  
