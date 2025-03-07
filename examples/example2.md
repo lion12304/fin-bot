@@ -290,15 +290,15 @@ Generating Response according to Netflix (NFLX) Reported Financial Numbers:
 **Reported Financial Numbers Agent:**
 Request for "Reported Numbers Agent":
 The following table contains numerical statistics on the last five quarterly earnings reports of Apple (AAPL). It includes the earnings per share (EPS) estimate, the reported EPS, and the earnings surprise percentage for each quarter.
-**Company Earnings Data:**
 
-Date       | EPS Estimate | Reported EPS | Surprise (%)
--------------------------------------------------------
-2025-01-29 | 2.35        | 2.40         | 2.15
-2024-10-30 | 1.60        | 1.64         | 2.35
-2024-07-31 | 1.35        | 1.40         | 3.99
-2024-05-01 | 1.50        | 1.53         | 1.97
-2024-01-31 | 2.10        | 2.18         | 3.90
+
+|Date       | EPS Estimate| Reported EPS | Surprise (%)|
+|-----------|-------------|--------------|-------------|
+|2025-01-29 | 2.35        | 2.40         | 2.15        |
+|2024-10-30 | 1.60        | 1.64         | 2.35        |
+|2024-07-31 | 1.35        | 1.40         | 3.99        |
+|2024-05-01 | 1.50        | 1.53         | 1.97        |
+|2024-01-31 | 2.10        | 2.18         | 3.90        |
 
 Additionally, here is a table which compares the financial performance of the company according to the last five earning reports (including the last):
 **Company Earnings Data:**
