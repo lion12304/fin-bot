@@ -15,7 +15,7 @@ Hi, I am finBot, an AI-driven finance agent. I can help you predict whether a st
 
 **Master Agent:**
 
-Generating Response according to Google (GOOG) News:
+Generating Response according to Apple (APPL) News:
 
 ---
 
