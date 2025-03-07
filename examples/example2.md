@@ -328,10 +328,21 @@ Based on the provided data, **Apple (AAPL) stock is likely to go up in the next 
 
 ### Conclusion:
 Given Apple's consistent earnings beats, strong financial performance, and historical trends, the stock is likely to experience upward momentum in the next quarter. However, external factors such as macroeconomic conditions, market sentiment, and broader tech sector performance should also be monitored as they could influence the stock's trajectory.
+
+---
+
+**Master Agent:**  
 Generating Response according to Stock Prices...
+---
+
+**Stock Price Agent:**
+
 Request for "Reported Numbers Agent":
 Based on the following candlestick chart of the stock's prices, What do you think Apple (AAPL) stock performance will be in the next quarter? First, state whether the stock is likely to go up or down in the next quarter. Then, provide a brief explanation supporting your prediction.
 Image:
+
+**Image:**  
+![Stock Chart](StocksPricesFigures/AAPL.jpeg)
 
 --------------------
 Agent Response:
