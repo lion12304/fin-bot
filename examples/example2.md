@@ -56,6 +56,7 @@ Another feature of Apple's AI rollout might be delayed, but investors shouldn't 
 The Apple Fifth Avenue store in New York, US, on Monday, Feb. 24, 2025. Michael Nagle | Bloomberg | Getty Images
 
 **By:** Morgan Chittum
+
 **Sentiment**: Neutral (Confidence of 0.9546042680740356)
 
 **4.** How much does Apple's staggered AI rollout really matter to the stock?
