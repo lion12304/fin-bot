@@ -46,6 +46,7 @@ def return_image_content(stock_ticker):
 
 
 class StockPricesAgent(Agent):
+    """The agent handles the stock prices (as a graph saved in .jpeg format)"""
     def __init__(self):
         super().__init__()
         self.DAY_AFTER_HOUR = 16
@@ -67,8 +68,6 @@ class StockPricesAgent(Agent):
 
         earliest_date_date = earliest_date.date()
         latest_date_date = latest_date.date()
-        assert earliest_date_date.month == latest_date_date.month
-        assert earliest_date_date.year == latest_date_date.year - 1
 
         # If the lower bound for hour of releasing the report is below 16:00, it means that
         # the report came out a day before, so we should rectify this
@@ -102,7 +101,7 @@ class StockPricesAgent(Agent):
         """
         start_date, end_date, company_numbers_df = self.return_dates_range(stock_ticker)
         # stock_prices_df, a.k.a "Stock prices"
-        stock_prices_df = yf.download(stock_ticker, period="5y")
+        stock_prices_df = yf.download(stock_ticker, period="5y", auto_adjust=True, progress=False)
         stock_prices_df.index = pd.to_datetime(stock_prices_df.index)
         stock_prices_df = stock_prices_df.loc[start_date:end_date]
         stock_prices_df.columns = stock_prices_df.columns.droplevel('Ticker')

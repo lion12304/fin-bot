@@ -63,6 +63,11 @@ def extract_items(pdf_path):
 
 
 def create_literal_earnings_report_dataset(stock_ticker):
+    """
+    :param stock_ticker: A ticker of a stock
+    The function creates a dataset for the sections of the given stock's literal earnings report sections
+    and inserts the sections to the dataset
+    """
     q10_sections = extract_items(f"create_datasets/q10_filings/Q10_{stock_ticker}.pdf")
     q10_chunks = [chunk for item in q10_sections for chunk in split_text_into_chunks(item, 1500)]
 

@@ -4,6 +4,10 @@ import pandas as pd
 from tabulate import tabulate
 
 def format_EPS_table_company_numbers(numbers_df):
+    """
+    :param numbers_df: A dataframe of the earning reports numbers of the stock
+    :return: A string format of the dataframe to be inserted to the LLM
+    """
     header = "Date       | EPS Estimate | Reported EPS | Surprise (%)"
     separator = "-" * len(header)
     rows = [f"{index.strftime('%Y-%m-%d')} | {row['EPS Estimate']:.2f}        | {row['Reported EPS']:.2f}         | {row['Surprise(%)']:.2f}"
@@ -26,6 +30,7 @@ def format_table_company_numbers(stock_ticker):
 
 
 class CompanyNumbersAgent(Agent):
+    """The agent handles company numbers about the stock"""
     def __init__(self):
         super().__init__()
         self.DAY_AFTER_HOUR = 16
@@ -47,8 +52,6 @@ class CompanyNumbersAgent(Agent):
 
         earliest_date_date = earliest_date.date()
         latest_date_date = latest_date.date()
-        assert earliest_date_date.month == latest_date_date.month
-        assert earliest_date_date.year == latest_date_date.year - 1
 
         # If the lower bound for hour of releasing the report is below 16:00, it means that
         # the report came out a day before, so we should rectify this

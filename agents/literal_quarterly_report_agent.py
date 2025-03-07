@@ -5,6 +5,7 @@ import time
 
 
 class LiteralQuarterlyReportAgent(Agent):
+    """The agent handles the literal earnings reports of the stock"""
     def __init__(self):
         super().__init__()
         self.QDRANT_URL = "https://530aa750-89da-4fe6-a9cb-19ed5528d94e.us-east4-0.gcp.cloud.qdrant.io"

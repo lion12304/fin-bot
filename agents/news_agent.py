@@ -3,6 +3,7 @@ from create_datasets.DB_utils import *
 
 
 class NewsAgent(Agent):
+    """The agent handles news about the stock"""
     def __init__(self):
         super().__init__()
 

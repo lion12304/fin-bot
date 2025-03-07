@@ -1,8 +1,11 @@
-import json
 import requests
 from DB_utils import *
 
 def get_articles(stock_name):
+    """
+    :param stock_name: A name of a stock
+    :return: The function returns articles/news about the stock
+    """
     url = f'https://api.finlight.me/v1/articles/extended?query={stock_name}%20stock'
     headers = {
         'accept': 'application/json',

@@ -48,6 +48,7 @@ def embed(document: str) -> list:
 
     return embedding
 
+# Creating the dataset
 def create_dataset(collection_name):
     if not client.collection_exists(collection_name):
         client.create_collection(

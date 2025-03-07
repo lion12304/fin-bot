@@ -15,7 +15,7 @@ class Agent:
         self.API_VERSION = "2023-05-15"
         self.max_tokens = 1000
 
-        # Initialize the Azure OpenAI chat model
+        # Initialize the Azure OpenAI chat model, with all the credentials
         self.chat = AzureChatOpenAI(
             azure_deployment=self.DEPLOYMENT_NAME,
             azure_endpoint=self.AZURE_OPENAI_ENDPOINT,
