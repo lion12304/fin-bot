@@ -24,6 +24,6 @@ python RunAgent.py
 ```
 
 ## Note: Stocks Limit
-Since this work is a proof-of-concept only the following stocks are available for use:
+Since this work is a proof of concept, only the following stocks are available for use:
 
-('Netflix', 'NFLX'), ('Apple', 'AAPL'), ('Google', 'GOOG'), ('Amazon', 'AMZN'), ('NVIDIA', 'NVDA'), ('Advanced Micro Devices', 'AMD'), ('Meta', 'META')
+Netflix (NFLX), Apple (AAPL), Google (GOOG), Amazon (AMZN), NVIDIA (NVDA), Advanced Micro Devices (AMD), and Meta (META).
