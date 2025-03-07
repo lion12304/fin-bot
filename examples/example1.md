@@ -1,5 +1,4 @@
-# FinBot
-## Example for a Run
+## 1st example for a run
 
 **Master Agent:**  
 Hi, I am finBot, an AI-driven finance agent. I can help you predict whether a stock is likely to go up or down in the next quarter.  
