@@ -363,19 +363,19 @@ _Q10 Agent Response:_
 
 Based on the information provided, **Google (GOOG) stock is likely to go up in the next quarter**. Here’s the reasoning:
 
-### 1. **Strong Internal Controls and Financial Reporting**
+## 1. **Strong Internal Controls and Financial Reporting**
    - The company’s management and auditors have confirmed the effectiveness of its internal controls over financial reporting, with no material weaknesses or changes. This reflects operational stability and transparency, which are positive signals for investors.
 
-### 2. **Growth in Long-Lived Assets**
+## 2. **Growth in Long-Lived Assets**
    - Alphabet’s long-lived assets increased significantly from $148.4 billion in 2023 to $184.6 billion in 2024, driven by investments in infrastructure and operations. This suggests continued expansion, particularly in high-growth areas like Google Cloud and AI.
 
-### 3. **Google Cloud Growth**
+## 3. **Google Cloud Growth**
    - Google Cloud’s costs and expenses have risen, indicating increased investment in this segment. While this may pressure margins in the short term, it reflects Alphabet’s commitment to capturing market share in the rapidly growing cloud computing industry, which is a long-term growth driver.
 
-### 4. **Unrealized Gain on Equity Investments**
+## 4. **Unrealized Gain on Equity Investments**
    - Alphabet recognized an $8 billion unrealized gain on non-marketable equity securities in January 2025. This gain could positively impact the company’s financial results in the next quarter, boosting investor sentiment.
 
-### 5. **Commitment to Sustainability and Workforce**
+## 5. **Commitment to Sustainability and Workforce**
    - Alphabet’s focus on sustainability and its competitive employee benefits and compensation programs help attract and retain top talent. This positions the company well for innovation and long-term growth, particularly in areas like AI and cloud computing.
 
 ### 6. **10b5-1 Trading Plans**
