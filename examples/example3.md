@@ -357,7 +357,7 @@ risks specific to our company
 we generate a significant portion of our revenues from advertising. reduced spending by advertisers, a
 loss of partners, or new and existing technologies that
 
-What do you think Google (GOOG) stock performance will be in the next quarter? First, state whether the stock is likely to go up or down in the next quarter. Then, provide a brief explanation supporting your prediction.
+*What do you think Google (GOOG) stock performance will be in the next quarter? First, state whether the stock is likely to go up or down in the next quarter. Then, provide a brief explanation supporting your prediction.*
 
 _Q10 Agent Response:_
 
@@ -423,7 +423,7 @@ Additionally, here is a table which compares the financial performance of the co
 | 2024-03-31 00:00:00 |                   2.53052e+08 |             0.164    |          3.0279e+10 |             1.543e+09 |                                1.543e+09 |                                                   2.3662e+10 |                 3.413e+09 |                   3.3712e+10 | 3.1822e+10 | 2.8409e+10 |             9.67e+08  |            9.4e+07 |         1.061e+09 |         2.23721e+10 |                                              2.3662e+10 |       5.5067e+10 |                           2.5472e+10 | 13396000000.0            | 12415000000.0          | 1.89          | 1.91        |                            2.5303e+10 | 1641000000.0                |                       2.3662e+10 |   2.3662e+10 |                                      2.3662e+10 |                         2.3662e+10 |       4.653e+09 |      2.8315e+10 |              1.876e+09 |                              3.59e+08 |                       -2.6e+07  |                  1.543e+09 |                                   9.67e+08  |                          9.4e+07 |                       1.061e+09 |         2.5472e+10 |          2.1355e+10 |                 1.1903e+10 |                           9.452e+09  |                       6.426e+09 |                            3.026e+09 |      3.026e+09 |     4.6827e+10 |        3.3712e+10 |      8.0539e+10 |          8.0539e+10 |
 | 2023-12-31 00:00:00 |                   3.35696e+06 |             0.152589 |          2.6022e+10 |             2.2e+07   |                                2.2e+07   |                                                   2.0687e+10 |                 1.563e+09 |                   3.7575e+10 | 2.6044e+10 | 2.4481e+10 |             1.041e+09 |            6.9e+07 |         1.11e+09  |         2.06684e+10 |                                              2.0687e+10 |       6.2613e+10 |                           2.3697e+10 | 12602000000.0            | 12488000000.0          | 1.64          | 1.66        |                            2.0687e+10 | N/A                         |                       2.0687e+10 |   2.0687e+10 |                                      2.0687e+10 |                         2.0687e+10 |       3.725e+09 |      2.4412e+10 |             -3.26e+08  |                             -9.2e+07  |                       -2.56e+08 |                  2.2e+07   |                                   1.041e+09 |                          6.9e+07 |                       1.11e+09  |         2.3697e+10 |          2.5038e+10 |                 1.2113e+10 |                           1.2925e+10 |                       7.719e+09 |                            5.206e+09 |      5.206e+09 |     4.8735e+10 |        3.7575e+10 |      8.631e+10  |          8.631e+10  |
 
-Based on this financial data, what do you think Google (GOOG) stock performance will be in the next quarter? First, state whether the stock is likely to go up or down in the next quarter. Then, provide a brief explanation supporting your prediction.
+*Based on this financial data, what do you think Google (GOOG) stock performance will be in the next quarter? First, state whether the stock is likely to go up or down in the next quarter. Then, provide a brief explanation supporting your prediction.*
 
 _Reported Financial Numbers Agent Response:_
 
@@ -453,7 +453,7 @@ Generating Response according to Google (GOOG) Stock Price Chart:
 
 _Stock Price Agent Request:_
 
-Based on the following candlestick chart of the stock's prices, What do you think Google (GOOG) stock performance will be in the next quarter? First, state whether the stock is likely to go up or down in the next quarter. Then, provide a brief explanation supporting your prediction.
+*Based on the following candlestick chart of the stock's prices, What do you think Google (GOOG) stock performance will be in the next quarter? First, state whether the stock is likely to go up or down in the next quarter. Then, provide a brief explanation supporting your prediction.*
 
 **Image:**  
 ![Stock Chart](StocksPricesFigures/GOOG.jpeg)
