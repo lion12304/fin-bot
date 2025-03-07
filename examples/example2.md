@@ -85,11 +85,9 @@ Nvidia's management is known for issuing conservative guidance for the next quar
 
 *What do you think Apple (AAPL) stock performance will be in the next quarter? First, state whether the stock is likely to go up or down in the next quarter. Then, provide a brief explanation supporting your prediction.*
 
---------------------
-Agent Response:
-**Prediction: Apple (AAPL) stock is likely to go up in the next quarter.**
+_"News Agent" Response:_
+Based on the aggregated information from the news documents, **Apple (AAPL) stock is likely to go up in the next quarter**. Here’s why:
 
-**Explanation:**
 1. **Revenue Growth and Operating Margins:** Apple has returned to revenue growth, with a 4% year-over-year increase in the last quarter and record operating margins of 32%. Its high-margin services division continues to grow rapidly, contributing to overall profitability and shareholder returns.
 
 2. **Shareholder-Friendly Policies:** Apple's consistent share repurchase program and dividend growth (up 110% over the last decade) make it attractive to long-term investors. These actions signal confidence in the company's financial health and ability to generate cash flow.
@@ -105,12 +103,12 @@ While there are headwinds, such as competition in China and delays in AI develop
 ---
 
 **Master Agent:**  
-Generating Response according to Q10 filing...
+Generating Response according to Apple (AAPL) Q10 filing:
 
 ---
 
 **Q10 Agent:**  
-Request for "Literal Report Agent":
+_Request for Q10 Agent:_  
 Based on the following sections from the last Q10 filing:
 
 1. Item 1. Legal Proceedings
