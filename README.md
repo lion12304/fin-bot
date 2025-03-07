@@ -22,3 +22,8 @@ The master agent, which initiating the whole pipline is in agents/master_agent.p
 cd agents/
 python RunAgent.py
 ```
+
+## Note: Stocks Limit
+Since this work is a proof-of-concept only the following stocks are available for use:
+
+('Netflix', 'NFLX'), ('Apple', 'AAPL'), ('Google', 'GOOG'), ('Amazon', 'AMZN'), ('NVIDIA', 'NVDA'), ('Advanced Micro Devices', 'AMD'), ('Meta', 'META')
