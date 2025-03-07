@@ -17,7 +17,7 @@ finbot\Scripts\activate
 pip install -r requirements.txt
 ```
 ## running the code
-
+The master agent, which initiating the whole pipline is in agents/master_agent.py. You can activate it by running agents/RunAgent.py:
 ```
 cd agents/
 python RunAgent.py
