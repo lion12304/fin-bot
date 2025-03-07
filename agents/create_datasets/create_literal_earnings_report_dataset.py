@@ -32,7 +32,7 @@ def filter_last_occurrences(items):
     for full_key, content in items.items():
         # Extract the item number from the key using a regex.
         # This matches "Item " followed by one or more digits.
-        match = re.match(r"Item\s*(\d+)", full_key)
+        match = re.match(r"item\s*(\d+)", full_key)
         if match:
             item_num = match.group(1)
             # Overwrite any previous occurrence for this item number.
@@ -44,10 +44,10 @@ def filter_last_occurrences(items):
 def extract_items(pdf_path):
     # Open the PDF and extract text
     with pdfplumber.open(pdf_path) as pdf:
-        text = "\n".join([page.extract_text() for page in pdf.pages if page.extract_text()])
+        text = "\n".join([page.extract_text() for page in pdf.pages if page.extract_text()]).lower()
 
     # Define a regex pattern for matching Q10 item headers
-    item_pattern = r"(Item\s\d+\.\s[^\n]+)"  # Matches "Item 1. Description"
+    item_pattern = r"(item\s\d+\.\s[^\n]+)"  # Matches "Item 1. Description"
 
     # Split the text into sections based on "Item X." headers
     sections = re.split(item_pattern, text)
